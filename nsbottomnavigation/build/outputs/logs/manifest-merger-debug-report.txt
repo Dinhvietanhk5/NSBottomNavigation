@@ -1,0 +1,27 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml:1:11-55
+		INJECTED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml
+		INJECTED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml:4:5-5:11
+uses-sdk
+INJECTED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml
+INJECTED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml
+INJECTED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml
+INJECTED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml
+		ADDED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml
+		INJECTED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml
+		ADDED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml
+		INJECTED from /Users/vietanh/Documents/test project/NSBottomnavigation/nsbottomnavigation/src/main/AndroidManifest.xml
