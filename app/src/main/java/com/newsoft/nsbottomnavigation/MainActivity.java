@@ -217,6 +217,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }, 3000);
 
+
+
         //bottomNavigation.setDefaultBackgroundResource(R.drawable.bottom_navigation_background);
     }
 
