@@ -14,11 +14,7 @@ import android.os.Handler;
 import android.view.View;
 import android.view.animation.OvershootInterpolator;
 
-import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
-import com.aurelhubert.ahbottomnavigation.AHBottomNavigationAdapter;
-import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
-import com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager;
-import com.aurelhubert.ahbottomnavigation.notification.AHNotification;
+import com.newsoft.nsbottomnavigation.notification.NSNotification;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -27,15 +23,15 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private DemoFragment currentFragment;
     private DemoViewPagerAdapter adapter;
-    private AHBottomNavigationAdapter navigationAdapter;
-    private ArrayList<AHBottomNavigationItem> bottomNavigationItems = new ArrayList<>();
+    private NSBottomNavigationAdapter navigationAdapter;
+    private ArrayList<NSBottomNavigationItem> bottomNavigationItems = new ArrayList<>();
     private boolean useMenuResource = true;
     private int[] tabColors;
     private Handler handler = new Handler();
 
     // UI
-    private AHBottomNavigationViewPager viewPager;
-    private AHBottomNavigation bottomNavigation;
+    private NSBottomNavigationViewPager viewPager;
+    private NSBottomNavigation bottomNavigation;
     private FloatingActionButton floatingActionButton;
 
     @Override
@@ -69,12 +65,12 @@ public class MainActivity extends AppCompatActivity {
 
         if (useMenuResource) {
             tabColors = getApplicationContext().getResources().getIntArray(R.array.tab_colors);
-            navigationAdapter = new AHBottomNavigationAdapter(this, R.menu.bottom_navigation_menu_3);
+            navigationAdapter = new NSBottomNavigationAdapter(this, R.menu.bottom_navigation_menu_3);
             navigationAdapter.setupWithBottomNavigation(bottomNavigation, tabColors);
         } else {
-            AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.tab_1, R.drawable.ic_apps_black_24dp, R.color.color_tab_1);
-            AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.tab_2, R.drawable.ic_maps_local_bar, R.color.color_tab_2);
-            AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.tab_3, R.drawable.ic_maps_local_restaurant, R.color.color_tab_3);
+            NSBottomNavigationItem item1 = new NSBottomNavigationItem(R.string.tab_1, R.drawable.ic_apps_black_24dp, R.color.color_tab_1);
+            NSBottomNavigationItem item2 = new NSBottomNavigationItem(R.string.tab_2, R.drawable.ic_maps_local_bar, R.color.color_tab_2);
+            NSBottomNavigationItem item3 = new NSBottomNavigationItem(R.string.tab_3, R.drawable.ic_maps_local_restaurant, R.color.color_tab_3);
 
             bottomNavigationItems.add(item1);
             bottomNavigationItems.add(item2);
@@ -86,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.manageFloatingActionButtonBehavior(floatingActionButton);
         bottomNavigation.setTranslucentNavigationEnabled(true);
 
-        bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
+        bottomNavigation.setOnTabSelectedListener(new NSBottomNavigation.OnTabSelectedListener() {
             @Override
             public boolean onTabSelected(int position, boolean wasSelected) {
 
@@ -205,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 // Setting custom colors for notification
-                AHNotification notification = new AHNotification.Builder()
+                NSNotification notification = new NSNotification.Builder()
                         .setText(":)")
                         .setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.color_notification_back))
                         .setTextColor(ContextCompat.getColor(MainActivity.this, R.color.color_notification_text))
@@ -243,20 +239,20 @@ public class MainActivity extends AppCompatActivity {
 
         if (useMenuResource) {
             if (addItems) {
-                navigationAdapter = new AHBottomNavigationAdapter(this, R.menu.bottom_navigation_menu_5);
+                navigationAdapter = new NSBottomNavigationAdapter(this, R.menu.bottom_navigation_menu_5);
                 navigationAdapter.setupWithBottomNavigation(bottomNavigation, tabColors);
                 bottomNavigation.setNotification("1", 3);
             } else {
-                navigationAdapter = new AHBottomNavigationAdapter(this, R.menu.bottom_navigation_menu_3);
+                navigationAdapter = new NSBottomNavigationAdapter(this, R.menu.bottom_navigation_menu_3);
                 navigationAdapter.setupWithBottomNavigation(bottomNavigation, tabColors);
             }
 
         } else {
             if (addItems) {
-                AHBottomNavigationItem item4 = new AHBottomNavigationItem(getString(R.string.tab_4),
+                NSBottomNavigationItem item4 = new NSBottomNavigationItem(getString(R.string.tab_4),
                         ContextCompat.getDrawable(this, R.drawable.ic_maps_local_bar),
                         ContextCompat.getColor(this, R.color.color_tab_4));
-                AHBottomNavigationItem item5 = new AHBottomNavigationItem(getString(R.string.tab_5),
+                NSBottomNavigationItem item5 = new NSBottomNavigationItem(getString(R.string.tab_5),
                         ContextCompat.getDrawable(this, R.drawable.ic_maps_place),
                         ContextCompat.getColor(this, R.color.color_tab_5));
 
@@ -291,7 +287,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Set title state for bottomNavigation
      */
-    public void setTitleState(AHBottomNavigation.TitleState titleState) {
+    public void setTitleState(NSBottomNavigation.TitleState titleState) {
         bottomNavigation.setTitleState(titleState);
     }
 

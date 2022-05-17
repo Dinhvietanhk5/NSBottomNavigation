@@ -1,4 +1,4 @@
-com.aurelhubert.ahbottomnavigation
+com.newsoft.nsbottomnavigation
 attr accentColor
 attr colored
 attr coloredActive

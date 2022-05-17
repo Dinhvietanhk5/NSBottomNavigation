@@ -4,9 +4,9 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'ah-bottom-navigation'
 
-    publishedGroupId = 'com.aurelhubert'
-    libraryName = 'AHBottomNavigation'
-    artifact = 'ahbottomnavigation'
+    publishedGroupId = 'com.newsoft'
+    libraryName = 'NSBottomNavigation'
+    artifact = 'nsbottomnavigation'
 
     libraryDescription = 'A library to reproduce the behavior of the Bottom Navigation guidelines from Material Design.'
 
